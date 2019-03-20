@@ -1,0 +1,38 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"Babel",
+		"BracketHighlighter",
+		"CSS3",
+		"DataConverter",
+		"Djaneiro",
+		"Dotfiles Syntax Highlighting",
+		"Elixir",
+		"Emmet",
+		"FileManager",
+		"GitGutter",
+		"Jade",
+		"jQuery",
+		"Material Theme",
+		"Materialize",
+		"Package Control",
+		"Pandoc",
+		"Pretty JSON",
+		"Pretty YAML",
+		"Sass",
+		"Six",
+		"SqlBeautifier",
+		"Stylus",
+		"SublimeLinter",
+		"SublimeLinter-flake8",
+		"Theme - Monokai Pro",
+		"TrailingSpaces",
+		"Unicode Character Insert",
+		"View In Browser"
+	]
+}

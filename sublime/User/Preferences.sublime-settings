@@ -1,0 +1,68 @@
+{
+	"always_show_minimap_viewport": true,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_with_fields": true,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace"
+	],
+	"find_selected_text": true,
+	"folder_exclude_patterns":
+	[
+		".git",
+		"node_modules",
+		"venv",
+		"__pycache__"
+	],
+	"font_size": 12,
+	"ignored_packages":
+	[
+		"CSS",
+		"GitGutter",
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"indent_to_bracket": false,
+	"match_brackets": false,
+	"match_brackets_angle": false,
+	"match_brackets_braces": false,
+	"match_brackets_content": false,
+	"match_brackets_square": false,
+	"match_tags": false,
+	"overlay_scroll_bars": "enabled",
+	"rulers":
+	[
+		120
+	],
+	"tab_size": 4,
+	"theme": "Monokai Classic.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_whitespace_on_save": true,
+	"use_tab_stops": true
+}

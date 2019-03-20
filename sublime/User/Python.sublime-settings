@@ -1,0 +1,5 @@
+// These settings override both User and Default settings for the Python syntax
+{
+    "remove_trailing_whitespace_on_save": true,
+    "tab_size": 4
+}

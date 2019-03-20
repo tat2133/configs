@@ -1,0 +1,11 @@
+# taken from https://github.com/math2001/st-user-package
+Package Control.cache/
+
+Package Control.merged-ca-bundle
+Package Control.system-ca-bundle
+Package Control.user-ca-bundle
+Package Control.last-run
+__pycache__
+*.sublime-workspace
+.SublimeREPLHistory
+oscrypto-ca-bundle.crt

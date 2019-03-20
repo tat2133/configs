@@ -1,0 +1,14 @@
+{
+  "user": {
+    "pandoc-path": "/usr/local/bin/pandoc",
+    "transformations": {
+      "PDF": {
+        "scope": {
+          "text.html": "html",
+          "text.html.markdown": "markdown"
+        },
+        "pandoc-arguments": [ "-t", "pdf", "--latex-engine=/Library/TeX/texbin/pdflatex"]
+      }
+    }
+  }
+}

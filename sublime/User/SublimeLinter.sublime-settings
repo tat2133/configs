@@ -1,0 +1,60 @@
+// SublimeLinter Settings - User
+{
+    "debug": true,
+    "delay": 0.25,
+    // "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
+    "gutter_theme": "Monokai Pro.gutter-theme",
+    "lint_mode": "background",
+    "linters": {
+        "flake8": {
+            "python": null,
+            "disable": false,
+            "excludes": [],
+            "ignore": "E741",
+            "max-complexity": -1,
+            "select": "",
+
+            // doesn't actually seem to work
+            //"max-line-length": 120,
+            // workaround:
+            "args": ["--max-line-length", "120"],
+        }
+    },
+    "no_column_highlights_line": false,
+    "paths": {
+        "linux": [],
+        "osx": ["/usr/local/bin"],
+        "windows": []
+    },
+    "show_marks_in_minimap": true,
+    "styles": [
+        {
+            "mark_style": "none",
+            "priority": 1,
+            "scope": "region.orangish",
+            "icon": "dot",
+            "types": [
+                "warning"
+            ]
+        },
+        {
+            "mark_style": "none",
+            "priority": 1,
+            "scope": "region.redish",
+            "icon": "dot",
+            "types": [
+                "error"
+            ]
+        }
+    ],
+    "syntax_map": {
+        "python django": "python",
+        "pythonimproved": "python",
+        "magicpython": "python",
+        "html 5": "html",
+        "html (django)": "html",
+        "html (rails)": "html",
+        "javascript (babel)": "javascript",
+        "php": "html"
+    },
+}
