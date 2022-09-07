@@ -41,7 +41,7 @@
 	[
 		"CSS",
 		"GitGutter",
-		"Vintage"
+		"Vintage",
 	],
 	"indent_guide_options":
 	[
@@ -64,5 +64,5 @@
 	"theme": "Monokai Classic.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_whitespace_on_save": true,
-	"use_tab_stops": true
+	"use_tab_stops": true,
 }

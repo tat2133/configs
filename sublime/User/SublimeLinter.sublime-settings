@@ -18,12 +18,15 @@
             //"max-line-length": 120,
             // workaround:
             "args": ["--max-line-length", "120"],
+        },
+        "rubocop": {
+            "executable": ["~/.rvm/bin/rvm-auto-ruby", "-S", "rubocop"]
         }
     },
     "no_column_highlights_line": false,
     "paths": {
         "linux": [],
-        "osx": ["/usr/local/bin"],
+        "osx": ["/usr/bin/env", "/usr/local/bin"],
         "windows": []
     },
     "show_marks_in_minimap": true,

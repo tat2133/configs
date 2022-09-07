@@ -18,10 +18,12 @@
 		"GitGutter",
 		"Jade",
 		"jQuery",
+		"MarkdownPreview",
 		"Material Theme",
 		"Materialize",
 		"Package Control",
 		"Pandoc",
+		"PowerShell",
 		"Pretty JSON",
 		"Pretty YAML",
 		"Sass",
@@ -30,9 +32,10 @@
 		"Stylus",
 		"SublimeLinter",
 		"SublimeLinter-flake8",
+		"SublimeLinter-rubocop",
 		"Theme - Monokai Pro",
 		"TrailingSpaces",
 		"Unicode Character Insert",
 		"View In Browser"
-	]
+	],
 }

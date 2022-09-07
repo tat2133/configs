@@ -1,3 +1,5 @@
 {
-"show_css_completions": false
+	"show_css_completions": false,
+	"telemetry": false,
+	"uid": "8f56cdfe-98b3-4d4d-a0c8-0d3b16b45a9b"
 }
