@@ -1,8 +1,12 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# have to hardcode CPATH b/c catalina + xcode 11 removed /usr/include which breaks a bunch of shit
+export CPATH=`xcrun --show-sdk-path`/usr/include
+export CPPPATH=`xcrun --show-sdk-path`/usr/include
+
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/taylor/.oh-my-zsh
+export ZSH=/Users/taylorthompson/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -55,20 +59,20 @@ export ZSH=/Users/taylor/.oh-my-zsh
 # source $ZSH/oh-my-zsh.sh
 
 # get path from .bash_profile
-source /Users/taylor/.bash_profile
+source /Users/taylorthompson/.bash_profile
 
 # User configuration
 
 # use antigen plugin manager
 export ANTIGEN_LOG=~/antigen.log
-source /usr/local/share/antigen/antigen.zsh
+source ~/antigen.zsh
 
 # load oh-my-zsh library
 antigen use oh-my-zsh
 
 # bundles from default repo
 antigen bundle git
-antigen bundle venv
+# antigen bundle venv
 
 # non-default bundles
 # antigen bundle popstas/zsh-command-time
@@ -97,7 +101,7 @@ antigen theme tat2133/talien talien
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-export SSH_KEY_PATH="~/.ssh/l2admin.pem"
+# export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -110,14 +114,19 @@ export SSH_KEY_PATH="~/.ssh/l2admin.pem"
 alias please='sudo "$(fc -ln -1)"'
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="${PATH}:${HOME}/.krew/bin"
 export PATH="$PATH:$HOME/.rvm/bin"
 
 # init pyenv and pyenv virtualenv on start of shell
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# eval "$(pyenv virtualenv-init -)"
 eval "$(direnv hook zsh)"
 
 antigen apply
+
+# standard move word shortcuts
+bindkey "[D" backward-word
+bindkey "[C" forward-word
 
 log_special() {
     jq -rR '. as $raw | try(fromjson? | if .level == "INFO" then "\u001B[0;36m"
@@ -140,3 +149,12 @@ time_test() {
 kube-token() {
     kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep eks-admin | awk '{print $1}')
 }
+mount-gin() {
+    sshfs gin:/home/taylor/ /Users/taylorthompson/mounts/gin/
+}
+mount-mezcal() {
+    sshfs -o ro gin:/mnt/ /Users/taylorthompson/mounts/mezcal/
+}
+
+# export PATH="/usr/local/opt/avr-gcc@8/bin:$PATH"
+# export PATH="/usr/local/opt/arm-gcc-bin@8/bin:$PATH"
